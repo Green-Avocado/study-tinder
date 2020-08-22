@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+  }
+.bg {
+    /* The image used */
+    background-image: url("./login-background.PNG");
+    /* Full height */
+    height: 100%;
+    width: 80%;
+    border-radius: 30px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+h3{
+    margin: 10%;
+    margin-top: 25%;
+    color:white;
+    font-family: 'Baloo Tamma 2';
+}
+.login-bar{
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.login-box{
+    background-color: lightgrey;
+    padding: 40px;
+    display: inline-block;
+    align-items: center;
+}
+.register-box{
+    background-color: lightgrey;
+    color:white;
+    padding: 40px;
+    display:inline-flexbox;
+    align-items: center;
+    margin-top:5%;
+}
+.password-reset,
+.new-user{
+    color:white;
+}
+.title{
+    margin:5%;
+    padding: 5%;
+    font-size: 90px;
+}
+.login,
+.register{
+    color: grey;
+    background-color: white;
+    border-color: grey;
+}
