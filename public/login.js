@@ -18,7 +18,7 @@ function login() {
         .catch((error) => {
             let errorCode = error.code;
             let errorMessage = error.message;
-            console.log(errorCode, errorMEssage);
+            console.log(errorCode, errorMessage);
             alert(errorMessage);
         });
 }
