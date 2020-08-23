@@ -1,17 +1,8 @@
-firebase.auth().onAuthStateChanged((user) => {
-    if(user) {
-        loadUserProfiles();
-    }
-    else {
-        window.location.replace("/login.html");
-    }
-});
-
 var db = firebase.firestore();
 
 var userList = new Array();
 
-function loadUserProfiles() {
+function initPage() {
     var user = firebase.auth().currentUser;
 
     db.collection('users').get()
@@ -36,10 +27,14 @@ function loadAllMatches() {
 
 function getMatch(index) {
     var card = document.getElementsByClassName('cards')[index];
+    var modal = document.getElementById('myModal' + (index + 1).toString());
 
     var image = card.getElementsByClassName('match-user-image')[0];
     var name = card.getElementsByClassName('match-user-name')[0];
     var subjects = card.getElementsByClassName('match-user-subject')[0];
+
+    var modalName = modal.getElementsByClassName('match-user-name')[0];
+    var modalImage = modal.getElementsByClassName('match-user-image')[0];
 
     var newMatch = userList.pop();
     if(newMatch == undefined) {
@@ -61,6 +56,10 @@ function getMatch(index) {
 
         image.innerHTML = `<img src="/Profiles/${data.profilePicture}.png">`;
         name.innerHTML = `<h3>${data.fname} ${data.lname}</h3>`;
+
+        modalImage.innerHTML = `<img src="/Profiles/${data.profilePicture}.png">`;
+        modalName.innerHTML = `<h3>${data.fname} ${data.lname}</h3>`;
+
         subjects.innerHTML = weakSubjects;
     }
 }

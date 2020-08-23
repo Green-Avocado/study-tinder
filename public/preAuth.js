@@ -1,9 +1,9 @@
-function initPage() {
-    var user = firebase.auth().currentUser;
-
+firebase.auth().onAuthStateChanged((user) => {
     if(user) {
         //TODO
-        //redirect to home page
     }
-}
+    else {
+        //TODO
+    }
+});
 
