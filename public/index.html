@@ -12,11 +12,10 @@
 <body>
     <div id="mySidepanel" class="sidepanel">
         <a class="closebtn" onclick="closeNav()"><img src="./Art Assets/Game Icons/PNG/White/1x/cross.png"/></a>
-        <a href="#"><img src="Art Assets/Game Icons/PNG/White/1x/singleplayer.png">Profile</a>
-        <a href="#"><img src="Art Assets/Game Icons Expansion/PNG/White/1x/cpu.png">Match</a>
-        <a href="#"><img src="Art Assets/Game Icons/PNG/White/1x/massiveMultiplayer.png">Friends</a>
-        <a href="#"><img src="Art Assets/Game Icons/PNG/White/1x/exclamation.png">Messages</a>
-      </div>
+        <a href="./profile.html"><img src="Art Assets/Game Icons/PNG/White/1x/singleplayer.png">Profile</a>
+        <a href="./match.html"><img src="Art Assets/Game Icons Expansion/PNG/White/1x/cpu.png">Match</a>
+        <a href="./friends.html"><img src="Art Assets/Game Icons/PNG/White/1x/massiveMultiplayer.png">Friends</a>
+    </div>
 
 
     <div class="row">
@@ -29,10 +28,10 @@
         </div>
 
         <div class="col float-right" style="margin-left:10%">
-            <button class="btn btn-lg" type="submit"><img src="./Art Assets/Game Icons/PNG/White/1x/plus.png"/>              Add by ID</button>
+            <button class="btn btn-lg" type="submit"><img src="./Art Assets/Game Icons/PNG/White/1x/plus.png"/>Add by ID</button>
         </div>
         <div class="col float-right">
-            <button class="btn btn-lg" type="submit"><img src="./Art Assets/Game Icons/PNG/White/1x/signal3.png"/>              Filter</button>
+            <button class="btn btn-lg" type="submit"><img src="./Art Assets/Game Icons/PNG/White/1x/signal3.png"/>Filter</button>
         </div>
     </div>
     <div class="row card-container">
@@ -44,7 +43,6 @@
                 <h3>Name</h3>
             </div>
             <span>wants to study: </span><div class="row match-user-subject"><p>science</p></div>
-            <span>Available on: </span><div class="row match-user-availability"><p>monday</p></div>
             <!-- Trigger/Open The Modal -->
             <button id="profileBtn1" class="btn profile">Profile</button>
             <button class="btn cross" type="submit"><img src="./Art Assets/Game Icons/PNG/White/1x/cross.png"/></button>
@@ -58,7 +56,6 @@
                 <h3>Name</h3>
             </div>
             <span>wants to study: </span><div class="row match-user-subject"><p>science</p></div>
-            <span>Available on: </span><div class="row match-user-availability"><p>monday</p></div>
             <!-- Trigger/Open The Modal -->
             <button id="profileBtn2" class="btn profile">Profile</button>
             <button class="btn cross" type="submit"><img src="./Art Assets/Game Icons/PNG/White/1x/cross.png"/></button>
@@ -72,7 +69,6 @@
                 <h3>Name</h3>
             </div>
             <span>wants to study: </span><div class="row match-user-subject"><p>science</p></div>
-            <span>Available on: </span><div class="row match-user-availability"><p>monday</p></div>
             <!-- Trigger/Open The Modal -->
             <button id="profileBtn3" class="btn profile">Profile</button>
             <button class="btn cross" type="submit"><img src="./Art Assets/Game Icons/PNG/White/1x/cross.png"/></button>
@@ -307,20 +303,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="sidebar.js"></script>
     <script src="profile-match.js"></script>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.19.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-
-    <script src="/__/firebase/7.19.0/firebase-auth.js"></script>
-    <script src="/__/firebase/7.19.0/firebase-firestore.js"></script>
-
-    <script src="match.js"></script>
-    <script src="authRequired.js"></script>
 </body>
 </html>
