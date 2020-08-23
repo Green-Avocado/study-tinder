@@ -45,6 +45,8 @@
     color: white;
     padding: 10px 15px;
     border: none;
+    border-radius: 30px;
+    height: 10%;
   }
   
   .openbtn:hover {

@@ -43,7 +43,7 @@ function getMatch(index) {
     var data = newMatch.data();
 
     image.innerHTML = `<img src="/Profiles/${data.profilePicture}.png">`;
-    name.innerText = `${data.fname} ${data.lname}`;
+    name.innerHTML = `<h3>${data.fname} ${data.lname}</h3>`;
 }
 
 function ignore(index) {
