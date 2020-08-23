@@ -25,6 +25,7 @@ function login() {
 
 function forgotPass() {
     //TODO
+    alert("Coming Soon");
 }
 
 function newUser() {
