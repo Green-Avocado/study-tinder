@@ -6,7 +6,7 @@ function register() {
 
     if(validity == 0) {
         firebase.auth().setPersistence(firebase.auth.Auth.Persistance.SESSION)
-            .then(() = {
+            .then(() => {
                 firebase.auth().createUserWithEmailAndPassword(email, pass)
                     .then(() => {
                         populateUserData();
