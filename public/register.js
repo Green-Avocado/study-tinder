@@ -67,33 +67,33 @@ function populateUserData() {
         fname : document.getElementById('fname').value,
         lname : document.getElementById('lname').value,
 
-        good-math : document.getElementById('goodMath').value,
-        bad-math : document.getElementById('badMath').value,
+        goodMath : document.getElementById('goodMath').value,
+        badMath : document.getElementById('badMath').value,
 
-        good-science : document.getElementById('goodScience').value,
-        bad-science : document.getElementById('badScience').value,
+        goodScience : document.getElementById('goodScience').value,
+        badScience : document.getElementById('badScience').value,
 
-        good-history : document.getElementById('goodHistory').value,
-        bad-history : document.getElementById('badHistory').value,
+        goodHistory : document.getElementById('goodHistory').value,
+        badHistory : document.getElementById('badHistory').value,
 
-        good-english : document.getElementById('goodEnglish').value,
-        bad-english : document.getElementById('badEnglish').value,
+        goodEnglish : document.getElementById('goodEnglish').value,
+        badEnglish : document.getElementById('badEnglish').value,
 
-        good-french : document.getElementById('goodFrench').value,
-        bad-french : document.getElementById('badFrench').value,
+        goodFrench : document.getElementById('goodFrench').value,
+        badFrench : document.getElementById('badFrench').value,
 
-        good-spanish : document.getElementById('goodSpanish').value,
-        bad-spanish : document.getElementById('badSpanish').value,
+        goodSpanish : document.getElementById('goodSpanish').value,
+        badSpanish : document.getElementById('badSpanish').value,
 
-        available-monday : document.getElementById('monday').value,
-        available-tuesday : document.getElementById('tuesday').value,
-        available-wednesday : document.getElementById('wednesday').value,
-        available-thursday : document.getElementById('thursday').value,
-        available-friday : document.getElementById('friday').value,
-        available-saturday : document.getElementById('saturday').value,
-        available-sunday : document.getElementById('sunday').value,
+        availableMonday : document.getElementById('monday').value,
+        availableTuesday : document.getElementById('tuesday').value,
+        availableWednesday : document.getElementById('wednesday').value,
+        availableThursday : document.getElementById('thursday').value,
+        availableFriday : document.getElementById('friday').value,
+        availableSaturday : document.getElementById('saturday').value,
+        availableSunday : document.getElementById('sunday').value,
 
-        profile-picture : pfp
+        profilePicture : pfp
     });
 }
 
