@@ -12,7 +12,6 @@ function register() {
                 firebase.auth().createUserWithEmailAndPassword(email, pass)
                     .then(() => {
                         populateUserData();
-                        alert('success');
                     })
                     .catch((error) => {
                         let errorCode = error.code;
@@ -97,6 +96,15 @@ function populateUserData() {
         availableSunday : document.getElementById('sunday').value,
 
         profilePicture : pfp
-    });
+    })
+        .then(() => {
+            window.location.replace("/index.html");
+        })
+        .catch((error) => {
+            let errorCode = error.code;
+            let errorMessage = error.message;
+            console.log(errorCode, errorMessage);
+            alert(errorMessage);
+        });
 }
 
