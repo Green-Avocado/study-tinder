@@ -59,7 +59,7 @@ function populateUserData() {
 
     if(document.getElementById('beige').checked) pfp = 1; 
     else if(document.getElementById('blue').checked) pfp = 2; 
-    else if(document.getElementById('red').checked) pfp = 3; 
+    else if(document.getElementById('pink').checked) pfp = 3; 
     else if(document.getElementById('green').checked) pfp = 4; 
     else if(document.getElementById('yellow').checked) pfp = 5; 
 
