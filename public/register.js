@@ -1,3 +1,5 @@
+var db = firebase.firestore();
+
 function register() {
     var email = document.getElementById("email").value;
     var pass = document.getElementById("pword").value;
