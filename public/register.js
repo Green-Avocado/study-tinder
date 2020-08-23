@@ -66,7 +66,7 @@ function populateUserData() {
     else if(document.getElementById('green').checked) pfp = 4; 
     else if(document.getElementById('yellow').checked) pfp = 5; 
 
-    userDB.update({
+    userDB.set({
         fname : document.getElementById('fname').value,
         lname : document.getElementById('lname').value,
 
