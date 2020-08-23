@@ -98,7 +98,7 @@ function populateUserData() {
         profilePicture : pfp
     })
         .then(() => {
-            window.location.replace("/index.html");
+            window.location.replace("/");
         })
         .catch((error) => {
             let errorCode = error.code;

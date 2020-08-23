@@ -6,7 +6,7 @@ function login() {
         .then(() => {
             firebase.auth().signInWithEmailAndPassword(email, pass)
                 .then(() => {
-                    window.location.href = "/home.html";
+                    window.location.href = "/";
                 })
                 .catch((error) => {
                     let errorCode = error.code;
