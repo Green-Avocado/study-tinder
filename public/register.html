@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;800&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/register.css">
+    <link rel="stylesheet" href="stylesheets/sidebar.css">
+
+    <script src="register.js"></script>
+    <script src="preAuth.js"></script>
+</head>
+<body>
+    <div class="row">
+        <img src="stylesheets/registration-background.PNG"/>
+    </div>
+    <div class="row" style="margin-left:5%; margin-top: 5%;"> 
+        <div class="col">
+            <label for="pfp">choose avatar</label>
+            <form class="pfp"><br>
+                    <input type="radio" name="pfp" id="none" value="none" checked>none</input>
+                    <input type="radio" name="pfp" id="beige" value="beige"></input>
+                    <label for="beige"><img src="./Art Assets/Platformer Assets Extra Animations & Enemies/Alien sprites/alienBeige_badge2.png"/></label> 
+                    <input type="radio" name="pfp" id="blue" value="blue"></input>
+                    <label for="blue"><img src="./Art Assets/Platformer Assets Extra Animations & Enemies/Alien sprites/alienBlue_badge2.png"/> </label> 
+                    <input type="radio" name="pfp" id="pink" value="pink"></input>
+                    <label for="pink"><img src="./Art Assets/Platformer Assets Extra Animations & Enemies/Alien sprites/alienPink_badge2.png"/> </label> 
+                    <input type="radio" name="pfp" id="green" value="green"></input>
+                    <label for="green"><img src="./Art Assets/Platformer Assets Extra Animations & Enemies/Alien sprites/alienGreen_badge2.png"/> </label> 
+                    <input type="radio" name="pfp" id="yellow" value="yellow"></input>
+                    <label for="yellow"><img src="./Art Assets/Platformer Assets Extra Animations & Enemies/Alien sprites/alienYellow_badge2.png"/> </label> 
+            </form>
+        </div>
+        <div class="col">
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="pword">Password:</label><br>
+                <input type="password" id="pword" name="pwordc"><br>
+                <label for="pwordc">Confirm password:</label><br>
+                <input type="password" id="pwordc" name="pwordc"><br>
+            </form>
+        </div>
+        <div class="col">
+            <form>
+                <p>Strong Subjects</p>
+                <input type="checkbox" id="goodMath" name="math" value="math">
+                <label for="math"> math</label><br>
+                <input type="checkbox" id="goodScience" name="science" value="science">
+                <label for="science"> science</label><br>
+                <input type="checkbox" id="goodHistory" name="history" value="history">
+                <label for="history"> history</label><br>
+                <input type="checkbox" id="goodEnglish" name="english" value="english">
+                <label for="english"> english</label><br>
+                <input type="checkbox" id="goodFrench" name="french" value="french">
+                <label for="french"> french</label><br>
+                <input type="checkbox" id="goodSpanish" name="spanish" value="spanish">
+                <label for="spanish"> spanish</label><br>
+            </form>
+        </div>
+        <div class="col">
+            <form>
+                <p>Subjects to improve on</p>
+                <input type="checkbox" id="badMath" name="math" value="math">
+                <label for="math"> math</label><br>
+                <input type="checkbox" id="badScience" name="science" value="science">
+                <label for="science"> science</label><br>
+                <input type="checkbox" id="badHistory" name="history" value="history">
+                <label for="history"> history</label><br>
+                <input type="checkbox" id="badEnglish" name="english" value="english">
+                <label for="english"> english</label><br>
+                <input type="checkbox" id="badFrench" name="french" value="french">
+                <label for="french"> french</label><br>
+                <input type="checkbox" id="badSpanish" name="spanish" value="spanish">
+                <label for="spanish"> spanish</label><br>
+            </form>
+        </div>
+        <div class="col">
+            <form>
+                <p>Avaliability</p> <br>
+                <label for="monday">monday</label> 
+                <select id="monday" name="monday"> 
+                    <option value="0">unavaliable</option>
+                    <option value="1">morning</option> 
+                    <option value="2">afternoon</option> 
+                    <option value="3">evening</option>  
+                </select> <br>
+                <label for="tuesday">tuesday</label> 
+                <select id="tuesday" name="tuesday"> 
+                    <option value="0">unavaliable</option>
+                    <option value="1">morning</option> 
+                    <option value="2">afternoon</option> 
+                    <option value="3">evening</option>   
+                </select>  <br>
+                <label for="wednesday">wednesday</label>
+                <select id="wednesday" name="wednesday"> 
+                    <option value="0">unavaliable</option>
+                    <option value="1">morning</option> 
+                    <option value="2">afternoon</option> 
+                    <option value="3">evening</option>   
+                </select>  <br>
+                <label for="thursday">thursday</label>
+                <select id="thursday" name="thursday"> 
+                    <option value="0">unavaliable</option>
+                    <option value="1">morning</option> 
+                    <option value="2">afternoon</option> 
+                    <option value="3">evening</option>   
+                </select>  <br>
+                <label for="friday">friday</label>
+                <select id="friday" name="friday"> 
+                    <option value="0">unavaliable</option>
+                    <option value="1">morning</option> 
+                    <option value="2">afternoon</option> 
+                    <option value="3">evening</option>   
+                </select>  <br>
+                <label for="saturday">saturday</label>
+                <select id="saturday" name="saturday"> 
+                    <option value="0">unavaliable</option>
+                    <option value="1">morning</option> 
+                    <option value="2">afternoon</option> 
+                    <option value="3">evening</option>   
+                </select>  <br>
+                <label for="sunday">sunday</label>
+                <select id="sunday" name="sunday"> 
+                    <option value="0">unavaliable</option>
+                    <option value="1">morning</option> 
+                    <option value="2">afternoon</option> 
+                    <option value="3">evening</option>   
+                </select>  <br>
+            </form>
+            <div class="submit">
+                <button class="btn btn-lg" type="button">submit</button>
+            </div>
+        </div>
+      </div>
+      
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="sidebar.js"></script>
+</body>
+</html>
