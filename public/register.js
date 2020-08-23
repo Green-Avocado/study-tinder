@@ -54,6 +54,7 @@ function fieldsValid() {
 
 function populateUserData() {
     var user = firebase.auth().currentUser;
+    var userDB = db.collection('users').doc(user.uid)
 
     var pfp = 0;
 
@@ -63,7 +64,7 @@ function populateUserData() {
     else if(document.getElementById('green').checked) pfp = 4; 
     else if(document.getElementById('yellow').checked) pfp = 5; 
 
-    firebase.database().ref('users/' + user.uid).update({
+    userDB.update({
         fname : document.getElementById('fname').value,
         lname : document.getElementById('lname').value,
 
