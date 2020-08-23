@@ -36,14 +36,28 @@ function loadAllMatches() {
 
 function getMatch(index) {
     var card = document.getElementsByClassName('cards')[index];
+
     var image = card.getElementsByClassName('match-user-image')[0];
     var name = card.getElementsByClassName('match-user-name')[0];
+    var subjects = card.getElementsByClassName('match-user-subject')[0];
 
     var newMatch = userList.pop();
     var data = newMatch.data();
 
+    const subjectNames = ["Math", "Science", "History", "English", "French", "Spanish"];
+
+    var weakSubjects = '';
+    var weaks = [data.badMath, data.badScience, data.badHistory, data.badEnglish, data.badFrench, data.badSpanish];
+
+    for(let i = 0; i < weaks.length; i++) {
+        if(weaks[i]) {
+            weakSubjects += `<p>${subjectNames[i]}</p>`;
+        }
+    }
+
     image.innerHTML = `<img src="/Profiles/${data.profilePicture}.png">`;
     name.innerHTML = `<h3>${data.fname} ${data.lname}</h3>`;
+    subjects.innerHTML = weakSubjects;
 }
 
 function ignore(index) {

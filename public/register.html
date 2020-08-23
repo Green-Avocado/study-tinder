@@ -20,10 +20,12 @@
                     <input type="radio" name="pfp" id="none" value="none" checked>none</input>
                     <input type="radio" name="pfp" id="beige" value="beige"></input>
                     <label for="beige"><img src="./Art Assets/Platformer Assets Extra Animations & Enemies/Alien sprites/alienBeige_badge2.png"/></label> 
+                    <br>
                     <input type="radio" name="pfp" id="blue" value="blue"></input>
                     <label for="blue"><img src="./Art Assets/Platformer Assets Extra Animations & Enemies/Alien sprites/alienBlue_badge2.png"/> </label> 
                     <input type="radio" name="pfp" id="pink" value="pink"></input>
                     <label for="pink"><img src="./Art Assets/Platformer Assets Extra Animations & Enemies/Alien sprites/alienPink_badge2.png"/> </label> 
+                    <br>
                     <input type="radio" name="pfp" id="green" value="green"></input>
                     <label for="green"><img src="./Art Assets/Platformer Assets Extra Animations & Enemies/Alien sprites/alienGreen_badge2.png"/> </label> 
                     <input type="radio" name="pfp" id="yellow" value="yellow"></input>
@@ -78,58 +80,75 @@
                 <label for="spanish"> spanish</label><br>
             </form>
         </div>
-        <div class="col">
+        <div class="col-4">
             <form>
                 <p>Avaliability</p> <br>
-                <label for="monday">monday</label> 
-                <select id="monday" name="monday"> 
-                    <option value="0">unavaliable</option>
-                    <option value="1">morning</option> 
-                    <option value="2">afternoon</option> 
-                    <option value="3">evening</option>  
-                </select> <br>
-                <label for="tuesday">tuesday</label> 
-                <select id="tuesday" name="tuesday"> 
-                    <option value="0">unavaliable</option>
-                    <option value="1">morning</option> 
-                    <option value="2">afternoon</option> 
-                    <option value="3">evening</option>   
-                </select>  <br>
-                <label for="wednesday">wednesday</label>
-                <select id="wednesday" name="wednesday"> 
-                    <option value="0">unavaliable</option>
-                    <option value="1">morning</option> 
-                    <option value="2">afternoon</option> 
-                    <option value="3">evening</option>   
-                </select>  <br>
-                <label for="thursday">thursday</label>
-                <select id="thursday" name="thursday"> 
-                    <option value="0">unavaliable</option>
-                    <option value="1">morning</option> 
-                    <option value="2">afternoon</option> 
-                    <option value="3">evening</option>   
-                </select>  <br>
-                <label for="friday">friday</label>
-                <select id="friday" name="friday"> 
-                    <option value="0">unavaliable</option>
-                    <option value="1">morning</option> 
-                    <option value="2">afternoon</option> 
-                    <option value="3">evening</option>   
-                </select>  <br>
-                <label for="saturday">saturday</label>
-                <select id="saturday" name="saturday"> 
-                    <option value="0">unavaliable</option>
-                    <option value="1">morning</option> 
-                    <option value="2">afternoon</option> 
-                    <option value="3">evening</option>   
-                </select>  <br>
-                <label for="sunday">sunday</label>
-                <select id="sunday" name="sunday"> 
-                    <option value="0">unavaliable</option>
-                    <option value="1">morning</option> 
-                    <option value="2">afternoon</option> 
-                    <option value="3">evening</option>   
-                </select>  <br>
+                <label for="monday">Monday:</label> 
+                <input id="m0" name="monday" type="checkbox" value="0">
+                <span>Morning</span>
+                <input id="m1" name="monday" type="checkbox" value="1">
+                <span>Afternoon</span>
+                <input id="m0" name="monday" type="checkbox" value="2">
+                <span>Evening</span>
+                <br>
+
+                <label for="tuesday">Tuesday:</label> 
+                <input id="t0" name="tuesday" type="checkbox" value="0">
+                <span>Morning</span>
+                <input id="t1" name="tuesday" type="checkbox" value="1">
+                <span>Afternoon</span>
+                <input id="t0" name="tuesday" type="checkbox" value="2">
+                <span>Evening</span>
+                <br>
+
+                <label for="wednesday">Wednesday:</label> 
+                <input id="w0" name="wednesday" type="checkbox" value="0">
+                <span>Morning</span>
+                <input id="w1" name="wednesday" type="checkbox" value="1">
+                <span>Afternoon</span>
+                <input id="w0" name="wednesday" type="checkbox" value="2">
+                <span>Evening</span>
+                <br>
+                
+                <label for="thursday">Thursday:</label> 
+                <input id="th0" name="thursday" type="checkbox" value="0">
+                <span>Morning</span>
+                <input id="th1" name="thursday" type="checkbox" value="1">
+                <span>Afternoon</span>
+                <input id="th0" name="thursday" type="checkbox" value="2">
+                <span>Evening</span>
+                <br>
+
+                <label for="friday">Friday:</label> 
+                <input id="f0" name="friday" type="checkbox" value="0">
+                <span>Morning</span>
+                <input id="f1" name="friday" type="checkbox" value="1">
+                <span>Afternoon</span>
+                <input id="f0" name="friday" type="checkbox" value="2">
+                <span>Evening</span>
+                <br>
+
+                <label for="saturday">Saturday:</label> 
+                <input id="s0" name="saturday" type="checkbox" value="0">
+                <span>Morning</span>
+                <input id="s1" name="saturday" type="checkbox" value="1">
+                <span>Afternoon</span>
+                <input id="s0" name="saturday" type="checkbox" value="2">
+                <span>Evening</span>
+                <br>
+                
+                <label for="sunday">Sunday:</label> 
+                <input id="su0" name="sunday" type="checkbox" value="0">
+                <span>Morning</span>
+                <input id="su1" name="sunday" type="checkbox" value="1">
+                <span>Afternoon</span>
+                <input id="su0" name="sunday" type="checkbox" value="2">
+                <span>Evening</span>
+                <br>
+                <br>
+                <br>
+                <br>
+                
             </form>
             <div class="submit">
                 <button class="btn btn-lg" type="button" onclick="register()">submit</button>

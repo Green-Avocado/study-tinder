@@ -65,6 +65,42 @@ function populateUserData() {
     else if(document.getElementById('green').checked) pfp = 4; 
     else if(document.getElementById('yellow').checked) pfp = 5; 
 
+    var mon = [
+        document.getElementById('m0').checked,
+        document.getElementById('m1').checked,
+        document.getElementById('m2').checked
+    ];
+    var tue = [
+        document.getElementById('t0').checked,
+        document.getElementById('t1').checked,
+        document.getElementById('t2').checked
+    ];
+    var wed = [
+        document.getElementById('w0').checked,
+        document.getElementById('w1').checked,
+        document.getElementById('w2').checked
+    ];
+    var thu = [
+        document.getElementById('th0').checked,
+        document.getElementById('th1').checked,
+        document.getElementById('th2').checked
+    ];
+    var fri = [
+        document.getElementById('f0').checked,
+        document.getElementById('f1').checked,
+        document.getElementById('f2').checked
+    ];
+    var sat = [
+        document.getElementById('s0').checked,
+        document.getElementById('s1').checked,
+        document.getElementById('s2').checked
+    ];
+    var sun = [
+        document.getElementById('su0').checked,
+        document.getElementById('su1').checked,
+        document.getElementById('su2').checked
+    ];
+
     userDB.set({
         fname : document.getElementById('fname').value,
         lname : document.getElementById('lname').value,
@@ -87,15 +123,18 @@ function populateUserData() {
         goodSpanish : document.getElementById('goodSpanish').checked,
         badSpanish : document.getElementById('badSpanish').checked,
 
-        availableMonday : document.getElementById('monday').value,
-        availableTuesday : document.getElementById('tuesday').value,
-        availableWednesday : document.getElementById('wednesday').value,
-        availableThursday : document.getElementById('thursday').value,
-        availableFriday : document.getElementById('friday').value,
-        availableSaturday : document.getElementById('saturday').value,
-        availableSunday : document.getElementById('sunday').value,
+        availableMonday : mon,
+        availableTuesday : tue,
+        availableWednesday : wed,
+        availableThursday : thu,
+        availableFriday : fri,
+        availableSaturday : sat,
+        availableSunday : sun,
 
-        profilePicture : pfp
+        profilePicture : pfp,
+
+        ignored: [],
+        friends: []
     })
         .then(() => {
             window.location.replace("/");
