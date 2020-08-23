@@ -2,7 +2,7 @@ function login() {
     var email = document.getElementById("namebar").value;
     var pass = document.getElementById("passwordbar").value;
 
-    firebase.auth().setPersistence(firebase.auth.Auth.Persistance.SESSION)
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
         .then(() => {
             firebase.auth().signInWithEmailAndPassword(email, pass)
                 .then(() => {
