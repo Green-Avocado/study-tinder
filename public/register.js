@@ -1,6 +1,6 @@
 function register() {
-    var email = document.getElementById("authEmail").value;
-    var pass = document.getElementById("authPass").value;
+    var email = document.getElementById("email").value;
+    var pass = document.getElementById("pword").value;
 
     validity = fieldsValid();
 
