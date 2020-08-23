@@ -70,23 +70,23 @@ function populateUserData() {
         fname : document.getElementById('fname').value,
         lname : document.getElementById('lname').value,
 
-        goodMath : document.getElementById('goodMath').value,
-        badMath : document.getElementById('badMath').value,
+        goodMath : document.getElementById('goodMath').checked,
+        badMath : document.getElementById('badMath').checked,
 
-        goodScience : document.getElementById('goodScience').value,
-        badScience : document.getElementById('badScience').value,
+        goodScience : document.getElementById('goodScience').checked,
+        badScience : document.getElementById('badScience').checked,
 
-        goodHistory : document.getElementById('goodHistory').value,
-        badHistory : document.getElementById('badHistory').value,
+        goodHistory : document.getElementById('goodHistory').checked,
+        badHistory : document.getElementById('badHistory').checked,
 
-        goodEnglish : document.getElementById('goodEnglish').value,
-        badEnglish : document.getElementById('badEnglish').value,
+        goodEnglish : document.getElementById('goodEnglish').checked,
+        badEnglish : document.getElementById('badEnglish').checked,
 
-        goodFrench : document.getElementById('goodFrench').value,
-        badFrench : document.getElementById('badFrench').value,
+        goodFrench : document.getElementById('goodFrench').checked,
+        badFrench : document.getElementById('badFrench').checked,
 
-        goodSpanish : document.getElementById('goodSpanish').value,
-        badSpanish : document.getElementById('badSpanish').value,
+        goodSpanish : document.getElementById('goodSpanish').checked,
+        badSpanish : document.getElementById('badSpanish').checked,
 
         availableMonday : document.getElementById('monday').value,
         availableTuesday : document.getElementById('tuesday').value,
